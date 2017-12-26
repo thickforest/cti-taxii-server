@@ -15,7 +15,13 @@ def main():
 
     init_backend(get_config()['backend'])
 
-    application_instance.run(debug=True)
+    IP = '0.0.0.0'
+    PORT = 9999
+    if len(sys.argv) < 3:
+        print "No port, use 9999 as default"
+    else:
+        PORT = int(sys.argv[2])
+    application_instance.run(debug=True, host=IP, port=PORT)
 
 
 if __name__ == '__main__':

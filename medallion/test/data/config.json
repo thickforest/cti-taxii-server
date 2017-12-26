@@ -1,14 +1,11 @@
 {
   "backend": {
     "type": "memory",
-    "data_file": "../test/data/default_data.json"
+    "data_file": "/cti-taxii-server/medallion/test/data/default_data.json"
   },
   "users": {
-    "admin": "Password0",
+    "admin": "123456",
     "user1": "Password1",
     "user2": "Password2"
   }
 }
-
-
-
